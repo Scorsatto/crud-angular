@@ -1,0 +1,10 @@
+<h1>Seja bem vindo {{text}}</h1>
+<h1>Seja bem vindo {{retornaNome()}}</h1>
+
+<img src="{{imgUrl}}" alt="{{imageDesc}}" (click)="clicouImagem()">
+<img [src]="imgUrl2" [alt]="imageDesc2">
+
+<button (click)="clicou()">Clique</button>
+
+<input type="text" class="form-control" [(ngModel)]="textInput">
+<p class="text-default">{{textInput}}</p>

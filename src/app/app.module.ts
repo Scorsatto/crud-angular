@@ -17,6 +17,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TodoListComponent } from './pages/todo/todo-list/todo-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TodoItemComponent } from './pages/todo/todo-item/todo-item.component';
+import { DataBindingComponent } from './pages/data-binding/data-binding.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { TodoItemComponent } from './pages/todo/todo-item/todo-item.component';
     UsersListComponent,
     UserFormComponent,
     TodoListComponent,
-    TodoItemComponent
+    TodoItemComponent,
+    DataBindingComponent
   ],
   imports: [
     BrowserModule,
