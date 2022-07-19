@@ -1,5 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { Observable } from 'rxjs';
 import { User } from 'src/app/models/user';
 import { UserService } from 'src/app/services/user.service';
 
@@ -31,7 +33,7 @@ export class UserFormComponent implements OnInit {
     })
   }
 
-  createUser(){
+  createUser() {
     this.userForm.get('id')?.patchValue(this.users.length + 1);
     this.userService.postUser(this.userForm.value).subscribe(result => {
       console.log(`Usuário ${result.nome} foi cadastrado com sucesso!`);
