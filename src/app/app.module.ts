@@ -20,6 +20,7 @@ import { TodoItemComponent } from './pages/todo/todo-item/todo-item.component';
 import { DataBindingComponent } from './pages/data-binding/data-binding.component';
 import { PipesExampleComponent } from './pages/pipes-example/pipes-example.component';
 import { UpperCasePipe } from '@angular/common';
+import { PrintListPipe } from './pipes/print-list.pipe';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { UpperCasePipe } from '@angular/common';
     TodoListComponent,
     TodoItemComponent,
     DataBindingComponent,
-    PipesExampleComponent
+    PipesExampleComponent,
+    PrintListPipe
   ],
   imports: [
     BrowserModule,

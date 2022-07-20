@@ -18,10 +18,15 @@ export class PipesExampleComponent implements OnInit {
     profissao: 'Dev'
   }
 
+  nomes = ['Fabiano'];
+
   constructor(private upperCasePipe: UpperCasePipe) { }
 
   ngOnInit(): void {
     this.text = this.upperCasePipe.transform(this.text);
   }
 
+  add(text: string) {
+    this.nomes.push(text);
+  }
 }
